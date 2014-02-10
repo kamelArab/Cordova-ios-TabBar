@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0">
+
+    <name>TabBar</name>
+    <author>....</author>
+    <license>Apache</license>
+
+    <!-- android -->
+        <!-- ios -->
+    <platform name="ios">
+        <js-module src="www/TabBar.js" name="TabBar">
+        </js-module>
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="TabBar">
+                <param name="ios-package" value="TabBar"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/TabBar.h" />
+
+        <source-file src="src/ios/TabBar.m" />
+    </platform>
+</plugin>
